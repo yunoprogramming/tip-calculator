@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  
+  <title>Tip Calculator</title>
+
+</head>
+<body>
+  <header>
+    <img src="./images/logo.svg" alt="logo">
+  </header>
+
+  <div class="container">
+
+    <div class="left">
+
+      <div class="bill">
+        <p>Bill</p>
+        <div class="input_container">
+          <img src="./images/icon-dollar.svg" alt="dollar-icon">
+          <input id="bill_input" type="number" placeholder=0>
+        </div>
+      </div>
+
+      <div class="people">
+        <p>Number of People</p>
+        <div class="input_container">
+          <img src="./images/icon-person.svg" alt="person-icon">
+          <input id="people_input" type="number" placeholder=0>
+        </div>
+      </div>
+      
+      <div class="tip">
+        <p>Select Tip %</p>
+        <div class="button_container">
+          <button class="buttons">5%</button>
+          <button class="buttons">10%</button>
+          <button class="buttons">15%</button>
+          <button class="buttons">20%</button>
+          <button class="buttons">30%</button>
+          <input type="number" id="custom" placeholder="Custom">
+        </div>
+      </div>
+    </div>
+      
+
+    <div class="right">
+
+      <div class="totals">
+        <div class="amount">
+          <div class="tip_per">
+            <p>Tip Amount</p>
+            <p>/person</p>
+          </div>
+
+        <h1 id='tip-per-person'>$0.00</h1>
+
+      </div>
+        <div class="amount">
+          <div class="total_per">
+            <p>Total</p>
+            <p>/person</p>
+          </div>
+
+          <h1 id="total-per-person">$0.00</h1>
+        
+        </div>
+      </div>
+
+      <div class="reset">
+        <button>RESET</button>
+      </div>
+
+    </div>
+  </div>
+
+  <img id="theme_btn" src="./images/icon-moon.svg" alt="dark mode">
+
+  <script src="script.js"></script>
+</body>
+</html>
